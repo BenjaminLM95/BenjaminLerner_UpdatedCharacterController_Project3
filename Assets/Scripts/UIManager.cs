@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour
     public GameObject PausedUI;
     public GameObject OptionsUI;
     public GameObject playerUI;
-    public GameObject ScoreUI;
+   
 
     public void EnableMainMenuUI()
     {
@@ -21,8 +21,7 @@ public class UIManager : MonoBehaviour
     public void EnableGamePlay()
     {
         DisableAllUI();
-        playerUI.gameObject.SetActive(true);
-        ScoreUI.gameObject.SetActive(true);
+        playerUI.gameObject.SetActive(true);        
         Cursor.visible = false;
 
     }
@@ -52,6 +51,6 @@ public class UIManager : MonoBehaviour
         MainMenuUI.gameObject.SetActive(false);
         OptionsUI.gameObject.SetActive(false);
         playerUI.gameObject.SetActive(false);
-        ScoreUI.gameObject.SetActive(false);
+        
     }
 }

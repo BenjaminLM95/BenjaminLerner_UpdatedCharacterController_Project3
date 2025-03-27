@@ -116,7 +116,7 @@ public class GameStateManager : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Level1_AreaA");
+        SceneManager.LoadScene("Map01");
         setPlayerPosition();
         ChangeState(GameState.Gameplay_State);
         
@@ -138,4 +138,10 @@ public class GameStateManager : MonoBehaviour
     {
         player.gameObject.transform.position = new Vector2(0f, 0f);
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
 }
