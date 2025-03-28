@@ -11,7 +11,7 @@ public class ChangeScenesTrigger : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //GameManager.Instance._levelManagement.LoadSceneWithSpawnPoint(sceneName, spawnPoint);
+            GameManager.Instance._levelManagement.LoadSceneWithSpawnPoint(sceneName, spawnPoint);
         }
     }
 }
